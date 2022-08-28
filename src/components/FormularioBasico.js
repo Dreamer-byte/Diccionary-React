@@ -1,13 +1,15 @@
 import React, { Fragment } from "react";
 import { useForm } from "react-hook-form";
 
+//https://www.creativosonline.org/slider-html-css.html importante
 
 const FormBasic = () => {
     
     const {register,handleSubmit,formState:{errors}} = useForm()
 
     const submitData=(data) =>{
-        console.log(data)
+        console.log(data.name)
+        console.log(data.category)
     }
 
     return(
